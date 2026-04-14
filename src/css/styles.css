@@ -1,4 +1,3 @@
-
 body {
   background-color: #0b0b0b;
   color: #fff;
@@ -46,6 +45,24 @@ h1 {
   align-items: center;
   text-decoration: none;
   color: inherit;
+}
+
+#theme-toggle, .btn-icon {
+  margin-right: 15px; 
+  background: none; 
+  border: none; 
+  color: white; 
+  font-size: 20px;
+}
+
+.profile-menu {
+  text-decoration: none; 
+  color: inherit
+}
+
+.fas fa-caret-down icon {
+  font-size: 14px; 
+  margin-left: 5px
 }
 
 /* ---------- AVATAR ---------- */
@@ -114,45 +131,16 @@ h1 {
 
 /* ---------- MEDIA QUERIES ---------- */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 6vw; /* Increase font size for better readability on smaller screens */
-  }
-
-  .lista-perfis {
-    gap: 4vw; /* Adjust gap for smaller screens */
-  }
-
-  .item-perfil {
-    width: 25vw; /* Allow profiles to take up more width */
-    min-width: 100px; /* Adjust min-width */
-  }
-
-  .nome-perfil {
-    font-size: 2.5vw; /* Increase name font size */
-  }
-
-  .botao-gerenciar {
-    font-size: 2.5vw; /* Increase button font size */
-    padding: 8px 25px;
-  }
+  h1 { font-size: 6vw; }
+  .lista-perfis { gap: 4vw; }
+  .item-perfil { width: 25vw; min-width: 100px; }
+  .nome-perfil { font-size: 2.5vw; }
+  .botao-gerenciar { font-size: 2.5vw; padding: 8px 25px; }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 8vw;
-    }
-
-    .item-perfil {
-        width: 40vw; /* Two profiles per row */
-        min-width: 80px;
-    }
-
-    .nome-perfil {
-        font-size: 4vw;
-    }
-
-    .botao-gerenciar {
-        font-size: 4vw;
-        padding: 10px 20px;
-    }
+  h1 { font-size: 8vw; }
+  .item-perfil { width: 40vw; min-width: 80px; }
+  .nome-perfil { font-size: 4vw; }
+  .botao-gerenciar { font-size: 4vw; padding: 10px 20px; }
 }
